@@ -1,0 +1,315 @@
+body {
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    font-size: 12px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+    user-select: none;
+    /* non-prefixed version, currently
+                                  not supported by any browser */
+    white-space: nowrap;
+}
+
+@media print {
+    body {
+        padding: 0px !important;
+    }
+}
+
+
+#techniques, #taxonomies, #strategy, #dimension,
+.story {
+    display: -webkit-flex;
+    display: flex;
+    /* justify-content: flex-start; */
+    justify-content:flex-end
+}
+
+.story:nth-child(even) {
+    /*background-color: lightgrey;*/
+}
+
+.cell {
+    border: 0.5px solid grey;
+    min-width: 24px;
+    text-align: center;
+    /*transition: opacity 0.05s linear;*/
+    overflow: hidden;
+}
+
+.d1 {
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 216px;
+    margin-right: 696px;
+    position: absolute;
+    background-color: white;
+    border: 0.5px solid grey;
+    z-index: 3000;
+}
+
+.d2 {
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 240px;
+    margin-right: 456px;
+    position: absolute;
+    border: 0.5px solid grey;
+    background-color: white;
+    z-index: 3000;
+}
+
+.d3 {
+    height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 456px;
+    margin-right: 0px;
+    position: absolute;
+    border: 0.5px solid grey;
+    background-color: white;
+    z-index: 3000;
+}
+
+
+
+
+.s1 {
+    /* height: 30px; */
+    text-align: center;
+    top:50px;
+    font-size: 12px;
+    width: 216px;
+    margin-right: 216px;
+    position: absolute;
+    background-color: white;
+    border: 0.5px solid grey;
+    z-index: 3000;
+}
+
+.s2 {
+    /* height: 30px; */
+    text-align: center;
+    top:50px;
+    font-size: 12px;
+    width: 96px;
+    margin-right: 120px;
+    position: absolute;
+    border: 0.5px solid grey;
+    background-color: white;
+    z-index: 3000;
+}
+
+.s3 {
+    /* height: 30px; */
+    text-align: center;
+    top:50px;
+    font-size: 12px;
+    width: 72px;
+    margin-right: 48px;
+    position: absolute;
+    border: 0.5px solid grey;
+    background-color: white;
+    z-index: 3000;
+}
+
+.s4 {
+    /* height: 30px; */
+    text-align: center;
+    top:50px;
+    font-size: 12px;
+    width: 48px;
+    position: absolute;
+    border: 0.5px solid grey;
+    background-color: white;
+    z-index: 3000;
+}
+
+
+.headercell {
+    height: 220px;
+    /*line-height: 100px;*/
+    /*align-items: bottom;*/
+    position: relative;
+    /*display: flex;*/
+    /*align-items: center;*/
+    background-color: none;
+}
+
+.rotate {
+    padding: 0px;
+    position: absolute;
+    bottom: 5;
+    left: 32;
+    height: 28px;
+    text-align: left;
+    min-width: 300px;
+    /*text-align: left;*/
+    /*vertical-align: middle;*/
+    /*display: inline-block;*/
+    -webkit-transform: rotate(270deg);
+    -webkit-transform-origin: bottom left;
+    transform: rotate(270deg);
+    transform-origin: bottom left;
+}
+
+.storyname {
+    text-align: left;
+    padding-left: 5px;
+    width: 500px;
+    background-color: none;
+    max-height: 30px;
+}
+
+.index {
+    vertical-align: super;
+    font-size: 6pt;
+}
+
+.storysource {
+    width: 300px;
+}
+
+
+
+.storyyear {
+    width: 30px;
+}
+
+.storyname.notastory a {
+    color: grey;
+    opacity: 0.5;
+}
+
+
+.parent.color1,
+.filled.color1 {
+    background-color:grey;
+}
+
+.parent.color2,
+.filled.color2 {
+    background-color: grey;
+}
+
+.parent.color3,
+.filled.color3 {
+    background-color: grey;
+}
+
+.parent.color4,
+.filled.color4 {
+    background-color: grey;
+}
+
+.parent.color5,
+.filled.color5 {
+    background-color: grey;
+}
+
+.filled.genre1 {
+    background-color: #3B5E7D;
+}
+.filled.genre2 {
+    background-color: #80C3C4;
+}
+.filled.genre3 {
+    background-color: #DAD5E9;
+}
+.filled.genre4 {
+    background-color: #DD9796;
+}
+.filled.genre5 {
+    background-color: #FAEFBA;
+}
+.filled.genre6 {
+    background-color: #F6C7B1;
+}
+.filled.genre12 {
+    background: linear-gradient(to right, #3B5E7D 0%, #3B5E7D 50%, #80C3C4 50%, #80C3C4 100%);
+    /* background-color: #3B5E7D;
+    border-right: 12px solid #80C3C4; */
+}
+.filled.genre14 {
+    background: linear-gradient(to right, #3B5E7D 0%, #3B5E7D 50%, #DD9796 50%, #DD9796 100%);
+    /* background-color: #3B5E7D;
+    border-right: 12px solid #DD9796; */
+}
+.filled.genre15 {
+    background: linear-gradient(to right, #3B5E7D 0%, #3B5E7D 50%, #FAEFBA 50%, #FAEFBA 100%);
+    /* background-color: #3B5E7D;
+    border-right: 12px solid #FAEFBA; */
+}
+.filled.genre16 {
+    background: linear-gradient(to right, #3B5E7D 0%, #3B5E7D 50%, #F6C7B1 50%, #F6C7B1 100%);
+    /* background-color: #3B5E7D;
+    border-right: 12px solid #F6C7B1; */
+}
+.filled.genre36 {
+    background: linear-gradient(to right, #DAD5E9 0%, #DAD5E9 50%, #F6C7B1 50%, #F6C7B1 100%);
+    /* background-color: #DAD5E9;
+    border-right: 12px solid #F6C7B1; */
+}
+.filled.genre46 {
+    background: linear-gradient(to right, #DD9796 0%, #DD9796 50%, #F6C7B1 50%, #F6C7B1 100%);
+    /* background-color: #DD9796;
+    border-right: 12px solid #F6C7B1; */
+}
+.filled.genre56 {
+    background: linear-gradient(to right, #FAEFBA 0%, #FAEFBA 50%, #F6C7B1 50%, #F6C7B1 100%);
+    /* background-color: #FAEFBA;
+    border-right: 12px solid #F6C7B1; */
+}
+.filled.genre456 {
+    background: linear-gradient(to right, #DD9796 0%, #DD9796 33.33%, #FAEFBA 33.33%, #FAEFBA 66.66%, #F6C7B1 66.66%, #F6C7B1 100%);
+    /* background-color: #DD9796;
+    border-left: 8px solid #FAEFBA;
+    border-right: 8px solid #F6C7B1; */
+}
+
+/* .child.color1 {
+    color:grey;
+}
+
+.child.color2 {
+    color: #fc8d62;
+}
+
+.child.color3 {
+    color: #8da0cb;
+}
+
+.child.color4 {
+    color: #e78ac3;
+}
+
+.child.color5 {
+    color: #3B5E7D;
+} */
+
+.faded {
+    opacity: 0.4;
+}
+
+.frequency.color1,
+.frequency.color2,
+.frequency.color3,
+.frequency.color4,
+.frequency.color5{
+    background-color: transparent;
+}
