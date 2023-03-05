@@ -13,14 +13,23 @@ body {
     user-select: none;
     /* non-prefixed version, currently
                                   not supported by any browser */
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 #chart{
-    padding-left: 30px;
+    padding-left: 50px;
     /* padding-top: 30px; */
-    padding-bottom: 30px;
-    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.googlesheet{
+    width:100%;
+    height: 700px;
+    padding-left: 50px;
+    /* padding-top: 30px; */
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
 
 @media print {
@@ -48,32 +57,38 @@ body {
     background-color: #3B5E7D;
 }
 
-.navigator{
+.tab{
     font-size: 16px;
     color:white;
     display: inline-block;
     height: 40px;
     line-height: 40px;
     width: 180px;
-}
-
-#corpus{
     background-color: #3B5E7D;
 }
 
-#design{
+.tab.active{
     background-color: #80C3C4;
 }
 
-#about{
-    background-color: #3B5E7D;
+a{
+    color: black;
+}
+
+
+a:hover{
+    color: white;
 }
 
 .header{
     text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+
 
 .title{
     font-size: 24px;
@@ -174,7 +189,7 @@ body {
 .s1 {
     /* height: 30px; */
     text-align: center;
-    top:185px;
+    top:217px;
     font-size: 12px;
     width: 216px;
     margin-right: 216px;
@@ -187,7 +202,7 @@ body {
 .s2 {
     /* height: 30px; */
     text-align: center;
-    top:185px;
+    top:217px;
     font-size: 12px;
     width: 96px;
     margin-right: 120px;
@@ -200,7 +215,7 @@ body {
 .s3 {
     /* height: 30px; */
     text-align: center;
-    top:185px;
+    top:217px;
     font-size: 12px;
     width: 72px;
     margin-right: 48px;
@@ -213,7 +228,7 @@ body {
 .s4 {
     /* height: 30px; */
     text-align: center;
-    top:185px;
+    top:217px;
     font-size: 12px;
     width: 48px;
     position: absolute;

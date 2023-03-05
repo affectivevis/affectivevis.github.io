@@ -23,36 +23,93 @@
 
 <body>
     <div class="navigation">
-        <div class="navigator" id="about">About</div>
-        <div class="navigator" id="corpus">Research Corpus</div>
-        <div class="navigator" id="design">Design Analysis</div>
+        <div class="tab" id="about"><a href="#about" onclick="tab_about()">About</a></div>
+        <div class="tab" id="corpus"><a href="#corpus" onclick="tab_corpus()">Research Corpus</a></div>
+        <div class="tab active" id="design"><a href="#design" onclick="tab_design()">Design Analysis</a></div>
     </div>
-    <div class="header">
-        <div class="title">Exploring the Landscape of Affective Visualization Design</div>
-        <div class="subtitle">An analysis of 61 affective visualiztaion design projects</div>
-    </div>
-    <div id="chart">
-        <div id="taxonomies">
-            <div id="dimension"></div>
-            <div id="strategy"></div>
+
+    <div id="page-corpus" style="display: none">
+        <div class="header">
+            <div class="title">Publications that Address Affective Visualization Design</div>
+            <div class="subtitle">108 papers, collected until 2023.1</div>
         </div>
-        <div id="techniques">
-            <div id="genrelegend">Genre Legend: <br>
-                <span class="legend genre1"></span> Interactive Interface<br>
-                <span class="legend genre2"></span> Video<br>
-                <span class="legend genre3"></span> Statis Image/Painting<br>
-                <span class="legend genre4"></span> Installation<br>
-                <span class="legend genre5"></span> Artifact<br>
-                <span class="legend genre6"></span> Event
+        <div class="googlesheet">
+            <iframe class="googlesheet" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTwTQSWw8uFpxnPDyhtTzqMUxlUj1S1lC3zzBP9uqHGC-NJhNqm0L6lYDFZR_orFNpL8ePQ9JtSnNkI/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>    
+        </div>
+    </div>
+   
+
+    <div id="page-design">
+        <div class="header">
+            <div class="title">Exploring the Landscape of Affective Visualization Design</div>
+            <div class="subtitle">An analysis of 61 affective visualiztaion design projects</div>
+        </div>
+        <div id="chart">
+            <div id="taxonomies">
+                <div id="dimension"></div>
+                <div id="strategy"></div>
             </div>
+            <div id="techniques">
+                <div id="genrelegend">Genre Legend: <br>
+                    <span class="legend genre1"></span> Interactive Interface<br>
+                    <span class="legend genre2"></span> Video<br>
+                    <span class="legend genre3"></span> Statis Image/Painting<br>
+                    <span class="legend genre4"></span> Installation<br>
+                    <span class="legend genre5"></span> Artifact<br>
+                    <span class="legend genre6"></span> Event
+                </div>
+            </div>
+    
+            <div id="stories"></div>
+        </div>    
+    </div>
+
+    <div id="page-about" style="display: none">
+        <div class="header">
+            <div class="subtitle">
+                The website presents the design methods we identified in the paper as well as the study material we used to evaluate these design methods. In the “Design Methods” tab, we present the 19 designed methods proposed by experts that have the potential to augment
+                        the communication of negativity. Each chard shows the name of the design method, a brief description, an example, the source of the example, and its "effectiveness ratio", which shows the percentage of the participants who thought
+                        this design method is effective in augmenting negative emotions in our user study. You can also click the "View comments" button to see why the participants thought the design method is / is not effective. The color of each card
+                        encodes the category of the design method.
+            </div>
+    
         </div>
 
-        <div id="stories"></div>
     </div>
 
     <script type="text/javascript" src="js/chart.js"></script>
     <script type="text/javascript">
         loadTechniques('space.csv', false)
+    </script>
+    <script>
+        function tab_about() {
+            document.getElementById("about").className = "tab active"
+            document.getElementById("corpus").className = "tab"
+            document.getElementById("design").className = "tab"
+            document.getElementById("page-about").style.display = "block"
+            document.getElementById("page-corpus").style.display = "none"
+            document.getElementById("page-design").style.display = "none"
+        }
+
+        function tab_corpus() {
+            document.getElementById("about").className = "tab"
+            document.getElementById("corpus").className = "tab active"
+            document.getElementById("design").className = "tab"
+            document.getElementById("page-corpus").style.display = "block"
+            document.getElementById("page-about").style.display = "none"
+            document.getElementById("page-design").style.display = "none"
+        }
+
+
+        function tab_design() {
+            document.getElementById("about").className = "tab"
+            document.getElementById("corpus").className = "tab"
+            document.getElementById("design").className = "tab active"
+            document.getElementById("page-about").style.display = "none"
+            document.getElementById("page-corpus").style.display = "none"
+            document.getElementById("page-design").style.display = "block"
+        }
+
     </script>
 
 </body>
