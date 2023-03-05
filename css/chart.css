@@ -1,8 +1,4 @@
 body {
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-right: 30px;
     font-size: 12px;
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -18,6 +14,13 @@ body {
     /* non-prefixed version, currently
                                   not supported by any browser */
     white-space: nowrap;
+}
+
+#chart{
+    padding-left: 30px;
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+    padding-right: 30px;
 }
 
 @media print {
@@ -38,6 +41,85 @@ body {
 .story:nth-child(even) {
     /*background-color: lightgrey;*/
 }
+
+.navigation{
+    text-align: center;
+    height: 40px;
+    background-color: #3B5E7D;
+}
+
+.navigator{
+    font-size: 16px;
+    color:white;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    width: 180px;
+}
+
+#corpus{
+    background-color: #3B5E7D;
+}
+
+#design{
+    background-color: #80C3C4;
+}
+
+#about{
+    background-color: #3B5E7D;
+}
+
+.header{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.subtitle{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+#genrelegend{
+    margin-right: 20px;
+}
+
+.legend{
+    display: inline-block;
+    width:10px;
+    height:10px;
+
+}
+
+.legend.genre1{
+    background-color: #3B5E7D;
+}
+
+.legend.genre2{
+    background-color: #80C3C4;
+}
+
+.legend.genre3{
+    background-color: #DAD5E9;
+}
+
+.legend.genre4{
+    background-color: #DD9796;
+}
+
+.legend.genre5{
+    background-color: #FAEFBA;
+}
+
+.legend.genre6{
+    background-color: #F6C7B1;
+}
+
 
 .cell {
     border: 0.5px solid grey;
@@ -92,7 +174,7 @@ body {
 .s1 {
     /* height: 30px; */
     text-align: center;
-    top:50px;
+    top:185px;
     font-size: 12px;
     width: 216px;
     margin-right: 216px;
@@ -105,7 +187,7 @@ body {
 .s2 {
     /* height: 30px; */
     text-align: center;
-    top:50px;
+    top:185px;
     font-size: 12px;
     width: 96px;
     margin-right: 120px;
@@ -118,7 +200,7 @@ body {
 .s3 {
     /* height: 30px; */
     text-align: center;
-    top:50px;
+    top:185px;
     font-size: 12px;
     width: 72px;
     margin-right: 48px;
@@ -131,7 +213,7 @@ body {
 .s4 {
     /* height: 30px; */
     text-align: center;
-    top:50px;
+    top:185px;
     font-size: 12px;
     width: 48px;
     position: absolute;
