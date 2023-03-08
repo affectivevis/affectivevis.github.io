@@ -102,20 +102,26 @@ function drawStories(raw_stories, raw_techniques, showIndices) {
             })
         })
 
-    storyNameDivs.append('a')
-        .attr('href', function(d) {
-            if (d.title != "Frequency"){
-                return d.url;
-            }
-        })
+    //title不要超链接
+        storyNameDivs.append('div')
         .text(function(d) {
-            return d.title;
-        })
-        .attr("target", function(d) {
-            if (d.title != "Frequency"){
-                return "_blank";
-            }
-        })
+                    return d.title;
+            })
+    //title有超链接
+    // storyNameDivs.append('a')
+    //     .attr('href', function(d) {
+    //         if (d.title != "Frequency"){
+    //             return d.url;
+    //         }
+    //     })
+    //     .text(function(d) {
+    //         return d.title;
+    //     })
+    //     .attr("target", function(d) {
+    //         if (d.title != "Frequency"){
+    //             return "_blank";
+    //         }
+    //     })
 
     //是否在标题后面显示标号，可删？
     if (showIndices == true) {
