@@ -155,7 +155,7 @@ body {
 .legend.material1{
     /* border: 1px solid black;
     border-radius: 50%; */
-    background: url("../image/website.svg");
+    background: url("../image/paper.svg");
     background-size: 12px 12px;
     background-repeat: no-repeat;
 }
@@ -163,7 +163,7 @@ body {
 .legend.material2{
     /* border: 1px solid black;
     border-radius: 50%; */
-    background: url("../image/paper.svg");
+    background: url("../image/website.svg");
     background-size: 12px 12px;
     background-repeat: no-repeat;
 }
@@ -177,7 +177,7 @@ body {
 }
 
 .legend.material-annotation1{
-    background: url("../image/website.svg");
+    background: url("../image/paper.svg");
     background-size: 11px 11px;
     background-repeat: no-repeat;
     margin-left: 3px;
@@ -187,7 +187,7 @@ body {
 .legend.material-annotation2{
     /* border: 1px solid black;
     border-radius: 50%; */
-    background: url("../image/paper.svg");
+    background: url("../image/website.svg");
     background-size: 11px 11px;
     background-repeat: no-repeat;
     margin-left: 3px;

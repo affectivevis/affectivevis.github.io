@@ -111,28 +111,29 @@ function drawStories(raw_stories, raw_techniques, showIndices) {
         storyNameDivs
         .append('a')
         .attr('href', function(d) {
-            return d.web;
+            return d.paper;
         })
         .attr("target", "_blank")
         .append('span')
         .classed('legend material-annotation1', function(d) {
+            if (d.paper != ''){
+                return true
+            }
+        })
+
+        storyNameDivs
+        .append('a')
+        .attr('href', function(d) {
+            return d.web;
+        })
+        .attr("target", "_blank")
+        .append('span')
+        .classed('legend material-annotation2', function(d) {
             if (d.web != ''){
                 return true
             }
         })
         
-        storyNameDivs
-        .append('a')
-        .attr('href', function(d) {
-            return d.paper;
-        })
-        .attr("target", "_blank")
-        .append('span')
-        .classed('legend material-annotation2', function(d) {
-            if (d.paper != ''){
-                return true
-            }
-        })
 
         storyNameDivs
         .append('a')
