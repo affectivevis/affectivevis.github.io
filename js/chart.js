@@ -7,7 +7,7 @@ var colorscale = d3.scale.ordinal()
 
 function loadTechniques(storyfile, showIndices) {
     var techniques = {}
-    d3.csv('codes.csv', function(raw_techniques) {
+    d3.csv('../data/codes.csv', function(raw_techniques) {
         raw_techniques.forEach(function(d) {
             d.color = colorscale(d.parent)
             techniques[d.id] = d
@@ -115,7 +115,7 @@ function drawStories(raw_stories, raw_techniques, showIndices) {
         })
         .attr("target", "_blank")
         .append('span')
-        .classed('legend material1', function(d) {
+        .classed('legend material-annotation1', function(d) {
             if (d.web != ''){
                 return true
             }
@@ -128,7 +128,7 @@ function drawStories(raw_stories, raw_techniques, showIndices) {
         })
         .attr("target", "_blank")
         .append('span')
-        .classed('legend material2', function(d) {
+        .classed('legend material-annotation2', function(d) {
             if (d.paper != ''){
                 return true
             }
@@ -141,7 +141,7 @@ function drawStories(raw_stories, raw_techniques, showIndices) {
         })
         .attr("target", "_blank")
         .append('span')
-        .classed('legend material3', function(d) {
+        .classed('legend material-annotation3', function(d) {
             if (d.interview != ''){
                 return true
             }

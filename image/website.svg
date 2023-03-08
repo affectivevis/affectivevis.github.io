@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="154px" height="154px" viewBox="0 0 154 154" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>画板备份 2</title>
+    <g id="画板备份-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="路径-4" fill="#2E4B65" points="101.898894 140 91.9365369 105 62.8988938 105 52.9365369 140"></polygon>
+        <path d="M150.5,83.5 L150.5,100 C150.5,101.794925 149.772463,103.419925 148.596194,104.596194 C147.419925,105.772463 145.794925,106.5 144,106.5 L144,106.5 L10,106.5 C8.20507456,106.5 6.58007456,105.772463 5.40380592,104.596194 C4.22753728,103.419925 3.5,101.794925 3.5,100 L3.5,100 L3.5,83.5 L150.5,83.5 Z" id="矩形" stroke="#3B5E7D" stroke-width="7" fill="#3B5E7D"></path>
+        <rect id="矩形" stroke="#3B5E7D" stroke-width="11" x="5.5" y="5.5" width="143" height="82.4513274" rx="10"></rect>
+        <rect id="矩形" fill="#3B5E7D" x="35" y="136" width="85" height="18" rx="9"></rect>
+        <line x1="60" y1="95" x2="94" y2="95" id="路径-3" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round"></line>
+    </g>
+</svg>

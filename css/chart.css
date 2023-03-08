@@ -123,8 +123,8 @@ body {
 
 .legend{
     display: inline-block;
-    width:10px;
-    height:10px;
+    width:12px;
+    height:12px;
 
 }
 
@@ -155,22 +155,53 @@ body {
 .legend.material1{
     /* border: 1px solid black;
     border-radius: 50%; */
-    background: url("../icon/web.svg");
-    background-size: 10px 10px;
+    background: url("../image/website.svg");
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
 }
 
 .legend.material2{
     /* border: 1px solid black;
     border-radius: 50%; */
-    background: url("../icon/paper.svg");
-    background-size: 10px 10px;
+    background: url("../image/paper.svg");
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
 }
 
 .legend.material3{
     /* border: 1px solid black;
     border-radius: 50%; */
-    background: url("../icon/interview.svg");
-    background-size: 10px 10px;
+    background: url("../image/interview.svg");
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+}
+
+.legend.material-annotation1{
+    background: url("../image/website.svg");
+    background-size: 11px 11px;
+    background-repeat: no-repeat;
+    margin-left: 3px;
+    vertical-align: text-bottom;
+}
+
+.legend.material-annotation2{
+    /* border: 1px solid black;
+    border-radius: 50%; */
+    background: url("../image/paper.svg");
+    background-size: 11px 11px;
+    background-repeat: no-repeat;
+    margin-left: 3px;
+    vertical-align: text-bottom;
+}
+
+.legend.material-annotation3{
+    /* border: 1px solid black;
+    border-radius: 50%; */
+    background: url("../image/interview.svg");
+    background-size: 11px 11px;
+    background-repeat: no-repeat;
+    margin-left: 3px;
+    vertical-align: text-bottom;
 }
 
 
