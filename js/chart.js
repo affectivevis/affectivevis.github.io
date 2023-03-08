@@ -102,11 +102,50 @@ function drawStories(raw_stories, raw_techniques, showIndices) {
             })
         })
 
-    //title不要超链接
-        storyNameDivs.append('div')
+        //title不要超链接
+        storyNameDivs = storyNameDivs.append('div')
         .text(function(d) {
-                    return d.title;
+                    return d.title + ' ';
             })
+
+        storyNameDivs
+        .append('a')
+        .attr('href', function(d) {
+            return d.web;
+        })
+        .attr("target", "_blank")
+        .append('span')
+        .classed('legend material1', function(d) {
+            if (d.web != ''){
+                return true
+            }
+        })
+        
+        storyNameDivs
+        .append('a')
+        .attr('href', function(d) {
+            return d.paper;
+        })
+        .attr("target", "_blank")
+        .append('span')
+        .classed('legend material2', function(d) {
+            if (d.paper != ''){
+                return true
+            }
+        })
+
+        storyNameDivs
+        .append('a')
+        .attr('href', function(d) {
+            return d.interview;
+        })
+        .attr("target", "_blank")
+        .append('span')
+        .classed('legend material3', function(d) {
+            if (d.interview != ''){
+                return true
+            }
+        })
     //title有超链接
     // storyNameDivs.append('a')
     //     .attr('href', function(d) {
@@ -122,15 +161,6 @@ function drawStories(raw_stories, raw_techniques, showIndices) {
     //             return "_blank";
     //         }
     //     })
-
-    //是否在标题后面显示标号，可删？
-    if (showIndices == true) {
-        storyNameDivs.append('span')
-            .classed('index', true)
-            .text(function(d) {
-                return " [" + d.index + "]"
-            })
-    }
 
     
     // //作者来源，改为领域

@@ -23,9 +23,9 @@
 
 <body>
     <div class="navigation">
-        <div class="tab active" id="about"><a href="#about" onclick="tab_about()">About</a></div>
+        <div class="tab" id="about"><a href="#about" onclick="tab_about()">About</a></div>
         <div class="tab" id="corpus"><a href="#corpus" onclick="tab_corpus()">Research Corpus</a></div>
-        <div class="tab" id="design"><a href="#design" onclick="tab_design()">Design Analysis</a></div>
+        <div class="tab active" id="design"><a href="#design" onclick="tab_design()">Design Analysis</a></div>
     </div>
 
     <div id="page-corpus" style="display: none">
@@ -39,7 +39,7 @@
     </div>
    
 
-    <div id="page-design" style="display: none">
+    <div id="page-design">
         <div class="header">
             <div class="title">Exploring the Landscape of Affective Visualization Design</div>
             <div class="subtitle">An analysis of 61 affective visualiztaion design projects</div>
@@ -53,7 +53,7 @@
                 <div id="genrelegend">Materials of the projects: <br>
                     <span class="legend material1"></span> Website<br>
                     <span class="legend material2"></span> Paper<br>
-                    <span class="legend material3"></span> Interview<br>
+                    <span class="legend material3"></span> Interview/Talk<br>
                 </div>
 
                 <div id="genrelegend">Genre: <br>
@@ -71,7 +71,7 @@
         </div>    
     </div>
 
-    <div id="page-about">
+    <div id="page-about" style="display: none">
         <div class="header">
             <div class="title">Affective Visualization Design: Leveraging the Pathos of Data</div>
             <div class="info">
