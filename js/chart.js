@@ -206,7 +206,10 @@ function drawStories(raw_stories, raw_techniques, showIndices) {
             }
         })
         .classed('filled', function(d) {
-            if (typeof(d.value) == 'string'){            
+            if (d.value > 0){
+                return false
+            }
+            else if (typeof(d.value) == "string"){            
                 return d.value;
             }
             //如果存在d.value，则赋以filled的class

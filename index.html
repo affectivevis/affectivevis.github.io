@@ -23,9 +23,9 @@
 
 <body>
     <div class="navigation">
-        <div class="tab" id="about"><a href="#about" onclick="tab_about()">About</a></div>
+        <div class="tab active" id="about"><a href="#about" onclick="tab_about()">About</a></div>
         <div class="tab" id="corpus"><a href="#corpus" onclick="tab_corpus()">Research Corpus</a></div>
-        <div class="tab active" id="design"><a href="#design" onclick="tab_design()">Design Analysis</a></div>
+        <div class="tab" id="design"><a href="#design" onclick="tab_design()">Design Analysis</a></div>
     </div>
 
     <div id="page-corpus" style="display: none">
@@ -39,7 +39,7 @@
     </div>
    
 
-    <div id="page-design">
+    <div id="page-design" style="display: none">
         <div class="header">
             <div class="title">Exploring the Landscape of Affective Visualization Design</div>
             <div class="subtitle">An analysis of 61 affective visualiztaion design projects</div>
@@ -71,14 +71,15 @@
         </div>    
     </div>
 
-    <div id="page-about" style="display: none">
+    <div id="page-about">
         <div class="header">
             <div class="title">Affective Visualization Design: Leveraging the Pathos of Data</div>
             <div class="info">
-                The website presents our study on affective visualization design, i.e., using data visualization design to communicate/influence emotion. 
-                <br><br>The "Research Corpus" tab presents the corpus containing 108 academic publications we collected about affective visualization design.
-                <br><br>The "Design Analysis" tab presents 61 specific projects that explicitly practice affective visualization design, as well as our analysis on these projects, including their design field (Where), design tasks (What), and design methods (How).
-                <br><br><strong>CITE:</strong>
+                The website presents our study on affective visualization design, i.e., using data visualization design to communicate and influence emotion. 
+                <br><br>The "Research Corpus" page presents the corpus containing 109 academic publications we collected about affective visualization design. We coded these publications in terms of how they justified the legitimacy of considering emotion in visualization design to clarify WHY emotion is important for visualization.
+                <br><br>The "Design Analysis" page presents 61 projects that practice affective visualization design. We coded the projects in three dimensions to explore the design space of affective visualization design, including their design fields (WHERE), design tasks (WHAT), and design methods (HOW).
+                <br><br><img src="image/about.jpeg" width="100%"></img>
+                <!-- <br><br><strong>CITE:</strong>
                 <br><br>Leave anonymous.
                 <br><br><div class="citation">@article{xxx,
                         title={Affective Visualization Design: Leveraging the Pathos of Data},
@@ -86,7 +87,7 @@
                         journal = {xxx},
                         year = {xxx},
                         publisher={xxx}
-                      }</div>    
+                      }</div>     -->
             </div>
         </div>
 
