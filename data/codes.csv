@@ -1,12 +1,12 @@
 name,id,parent
-Social issues,Social,Field
 Environmental sciences & ecology,Environmental,Field
+Social issues,Social,Field
 Health & well-being,Health,Field
 News & media,News,Field
-Personal life,Daily,Field
-Business & economics,Business,Field
+Daily life,Daily,Field
+Business,Business,Field
 Urban studies,Urban,Field
-Human geography,Geography,Field
+History,History,Field
 Mixed topics / not specified,Mixed,Field
 Inform,Inform,Task
 Engage,Engage,Task
@@ -14,8 +14,8 @@ Experiment,Experiment,Task
 Provoke,Provoke,Task
 Advocate,Advocate,Task
 Socialize,Socialize,Task
-Empower,Empower,Task
 Heal,Heal,Task
+Empower,Empower,Task
 Commemorate,Commemorate,Task
 Archive,Archive,Task
 Genre,Genre,Genre
